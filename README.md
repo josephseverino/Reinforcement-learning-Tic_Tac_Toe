@@ -29,9 +29,7 @@ if __name__ == '__main__':
 
 <p align="center">
   <h3>My Strategy Played by the Agent </>
-  <img src="tictactoe1.png" />
-  <img src="tictactoe2.png" />
-  <img src="tictactoe3.png" />
+  <img src="tictactoegame.png" />
 </p>
 
 ## Conclusion
