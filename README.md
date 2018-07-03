@@ -9,11 +9,11 @@
 </span>
 <p align="center">
   <h3>Tic-Tac-Toe Theory And Probability </>
-  <img src="tic-tac-toe.png" )
+  <img src="tic-tac-toe.png" />
 </p>
 
 ### A Brief Theory
-<span style="font-family:Papyrus"> In the above diagram, you can see the grid is symmetric in nature, so it is ok to generalize equivilant states to be valued the same in the perfect world. As you will see shortly, this is not the case for this agent or at least it was not what I observed from my many experiments. The next important thing is notice that in the corner case there are 4 out of 5 (one not being showed: the center defensive move) that lead to a win right away if taken advantage of. There are only 1 out of 2 generalized ways to get to a win in equal number of turns from starting in the middle. However, the middle has many ways further in the future to achieve a win. This is true for the corner start as well but far less of those exist. 
+<span style="font-family:Papyrus"> In the above diagram, you can see the grid is symmetric in nature, so it is ok to generalize equivilant states to be valued the same in a perfect world. As you will see shortly, this is not the case for this agent or at least it was not what I observed from my many experiments. The next thing to observe is that in the corner case there are 4 out of 5 (one not being showed: the center defensive move) that lead to a win right away if taken advantage of. There are only 1 out of 2 generalized ways to get to a win in equal number of turns from starting in the middle. However, the middle has many ways further in the future to achieve a win. This is true for the corner start as well but far less of those exist. 
 </span>
 
 ### Lets See The Agent Play My Stategy
@@ -28,11 +28,13 @@ if __name__ == '__main__':
 ```
 
 <p align="center">
-  <h3>Tic-Tac-Toe Theory And Probability </>
-  <img src="tic-tac-toe2.png" )
+  <h3>My Strategy Played by the Agent </>
+  <img src="tictactoe1.png" />
+  <img src="tictactoe2.png" />
+  <img src="tictactoe3.png" />
 </p>
 
-## Concclusion
+## Conclusion
 
-<span style="font-family:Papyrus"> As stated above, my original hypothesis did not hold true for this problem. Regardless, the agent learned a optimal policy simply based off random actions based off epsilon values combined with retaining that knowledge through alpha values. Additionally, I learned that you can train the agents with different epsilons and alpha values. This proved to be interesting and made it more likely me to train the agent in my stategy. For future research, it would be interesting to investigate rewarding ties with higher values than losses and find a way to include a discount factor for too many moves. Of course this is assuming the advantage is your opposing player is not very good at seeing further into the future. 
+<span style="font-family:Papyrus"> As stated above, my original hypothesis did not hold true for this problem. Regardless, the agent learned a optimal policy simply based off random actions given certain epsilon values combined with alpha values (its learning rate). Additionally, I learned that you can train the agents with different epsilons and alpha values. This proved to be interesting and made it more likely for me to train the agent in my stategy. Although, it did not always choose the corner as a starting point due to randomnes of exploration. For future research, it would be interesting to investigate rewarding ties with higher values than losses and find a way to include a discount factor for more moves till completing a win. Of course this is assuming the advantage is your opposing player is not very good at seeing further into the future. 
 </span>
