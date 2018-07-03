@@ -18,6 +18,8 @@
 
 ### Lets See The Agent Play My Stategy
 
+<span style="font-family:Papyrus"> The below game showed that the agent did not figure out the symmetry of the game due to it not needing to know. Otherwise, it would have valued all the corners equally. Next, you see it takes a corner stragey to cause a trap. I played my most optimal move and it eventually ended in a tie. The other lesson is that I trained the agent to practice with another agent that explored more often so that I could see how that effected the player one agent. This proved to be the best way to mimic my strategy most often. Like many experiments, I did not always get the same values for each state, nor did I always get the same starting position but with this epsilon/alpha combo, I returned a corner position first most often.
+</span>
 
 ```python
 if __name__ == '__main__':
